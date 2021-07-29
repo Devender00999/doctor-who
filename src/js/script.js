@@ -5,7 +5,7 @@ currentCompanions.forEach((companion) => {
   content += `<div class="comContainer col-4 com-sm-12">
     <div class="comImage">
       <div class="image1">
-        <img src="${companion.image}" alt="">
+        <img src="${companion.image.slice(1)}" alt="">
         <div class="overlayImage">${companion.name}
           <div>
             ${
