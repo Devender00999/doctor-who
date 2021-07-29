@@ -1,0 +1,596 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #f69800 rgba(0, 0, 0, 0.05);
+}
+
+/* NavBar */
+.container-fluid {
+  padding-right: 0;
+}
+
+.navbar {
+  background: #101820;
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.line {
+  content: "";
+  width: 3px;
+  height: 22px;
+  background: #f69800;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link {
+  transition: all 0.2s ease-in;
+}
+
+.nav-link:hover {
+  color: #f69800 !important;
+  transition: all 0.2s ease-out;
+}
+.navbar-nav a {
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 0 5px;
+  color: white !important;
+}
+
+.navbar-nav a:last-child {
+  margin-right: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./src/images/navBar.svg");
+}
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: 0;
+  outline: 0;
+}
+
+/* Navbar Ends */
+
+/* Hero Image Starts */
+.image {
+  height: calc(100vh - 62px);
+  /* background: url("./src/images/All-Doctors.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+}
+#heroImage{
+  content: url("./src/images/All-Doctors.jpg");
+
+}
+.overlay {
+  height: calc(100vh - 62px);
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 115px;
+  line-height: 157px;
+  text-align: center;
+
+  color: #ffffff;
+}
+/* Hero Image Ends */
+
+/* #about {
+  height: 100vh;
+} */
+.heading {
+  color: #f69800;
+  display: flex;
+  font-size: 35px;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-family: "Nova Round";
+  font-weight: bolder;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  width: 50px;
+  height: 6px;
+  border-top: 2px solid #f69800;
+  margin-right: 20px;
+  display: inline-block;
+  border-bottom: 2px solid #f69800;
+}
+.headerImage {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100vh - 62px);
+}
+.heading::after {
+  margin-left: 20px;
+}
+
+#about p {
+  font-family: "Nova Round";
+  font-size: 20px;
+  color: #101820;
+}
+.aboutDoctor {
+  height: 50%;
+}
+.aboutGallifrey {
+  height: 50%;
+}
+.aboutContainer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  column-gap: 20px;
+}
+.aboutContainer p {
+  width: 65%;
+}
+.imageContainer {
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+}
+.image1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.image1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid #f69800;
+}
+.image1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.overlayImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+
+.image1:hover .overlayImage {
+  transition: all 300ms ease;
+  transform: translateY(-100%);
+}
+
+/*  */
+
+/* Compainions */
+
+.companions img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+.comImage {
+  width: 250px;
+  border-radius: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.comImage .overlayImage {
+  border-radius: 100%;
+}
+
+.row {
+  /* padding: 20px; */
+  justify-content: center;
+}
+.comContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.col-4 {
+  max-width: unset;
+  margin-top: 10px;
+}
+.comContainer h3 {
+  padding: 10px 0;
+  color: #f69800;
+  font-family: "Nova Round";
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  padding: 8px 15px;
+  background: #f69800;
+  color: white;
+  font-family: "Nova Round";
+  border-radius: 15px;
+  font-size: 20px;
+  border: 0 solid white;
+  text-decoration: none;
+  border: 2px solid #f69800;
+  transition: all 300ms ease;
+}
+
+.button a:hover {
+  border: 2px solid #f69800;
+  background: white;
+  color: #f69800;
+  transition: all 300ms ease;
+}
+.social {
+  display: flex;
+  margin: 0px 40px;
+  border-radius: 20px 20px 0 0px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.creator {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Nova Round";
+  font-size: 22px;
+  background: #f69800;
+  color: white;
+  font-weight: bold;
+}
+.social {
+  padding: 30px 50px 5px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.quote {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.socialHandles {
+  flex: 1;
+}
+.fa-wordpress,
+.wordpress {
+  color: #000;
+}
+.fa-facebook,
+.facebook {
+  color: #1877f2;
+}
+.fa-instagram,
+.instagram {
+  background: -moz-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter,
+.twitter {
+  color: #239ee9;
+}
+
+.socialText {
+  font-family: "Nova Round";
+}
+.quote img {
+  width: 200px;
+}
+.quote p {
+  font-family: "Nova Round";
+}
+.socialHandles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.socialHandles a {
+  padding: 10px;
+  text-decoration: none;
+}
+.socialHandles i {
+  font-size: 35px;
+}
+
+/* Series CSS */
+.series {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.seriesDetails {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  /* background-color: #f69800; */
+  /* box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1) */
+
+  border-radius: 11px;
+  overflow: hidden;
+}
+.series .title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 10px solid #f69800;
+  background: #f69800;
+}
+.title img {
+  /* transform: rotate(-90deg) translate(-100%); */
+  width: 100%;
+  height: 100%;
+  /* border-bottom: 0; */
+  /* max-height: 318px; */
+  border-radius: 10px;
+}
+.title h1 {
+  font-family: "Nova Round";
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  display: none;
+
+  align-items: center;
+  background: #f69800;
+  color: white;
+  height: 20%;
+  margin: 0;
+}
+.series .shows {
+  width: 60%;
+  display: flex;
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  flex-wrap: wrap;
+  /* background-color: #f69800; */
+  justify-content: center;
+}
+.seriesImage {
+  width: 50%;
+  height: auto;
+  background: #f69800;
+  border: 10px solid #f69800;
+}
+.seriesImage .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.seriesImage .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.seriesImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  max-height: 180px;
+}
+.aboutSeason {
+  position: absolute;
+  padding: 20px;
+}
+/* Series CSS Ends Here */
+
+/* References */
+
+.reference {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.references {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ref {
+  width: max-content;
+}
+.ref a {
+  min-width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* References Ends Here */
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a2712;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8a2712;
+}
+
+/* Scroll Bar  */
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .line {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #f69800;
+  }
+  .ref {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #heroImage{
+    content: url("./src/images/alldoctorWho.jpg");
+  }
+  .headerImage{
+    content: url("");
+  }
+  .reference {
+    flex-direction: column;
+  }
+  .seriesDetails {
+    flex-direction: column;
+  }
+  .seriesDetails .title,
+  .seriesDetails .shows {
+    width: 100%;
+  }
+  .socialText {
+    display: none;
+  }
+  .heading {
+    text-align: center;
+    font-size: 25px;
+  }
+  #about p {
+    font-size: 18px;
+  }
+  .button {
+    justify-content: center;
+  }
+  .quote {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .comContainer h3 {
+    font-size: 18px;
+  }
+  .social {
+    padding: 30px 30px 8px 30px;
+  }
+  .socialHandles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #f69800;
+  }
+
+  .overlay h1 {
+    font-size: 60px !important;
+    line-height: normal;
+  }
+  .heading {
+    padding: 20px;
+  }
+  .heading::before,
+  .heading::after {
+    width: 25px;
+    margin: 10px;
+  }
+  #about p {
+    font-size: 15px;
+  }
+
+  #about {
+    height: max-content;
+  }
+  .aboutContainer {
+    flex-wrap: wrap-reverse;
+  }
+  #about p {
+    width: 100%;
+  }
+  .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+
+/* Media Queries Ends*/
