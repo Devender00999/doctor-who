@@ -38,11 +38,4 @@ currentCompanions.forEach((companion) => {
     <h3>${companion.alias}</h3>
     </div>`;
 });
-// comp.innerHTML = content;
-// console.log(window.innerWidth);
-// // Screen
-// if (window.innerWidth <= "768") {
-//   var heroImage = document.getElementById("heroImage");
-//   heroImage.setAttribute("src", "./src/images/alldoctorWho.jpg");
-//   console.log("Hello Wolrd");
-// }
+comp.innerHTML = content;
